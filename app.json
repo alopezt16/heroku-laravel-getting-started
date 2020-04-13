@@ -1,0 +1,48 @@
+{
+    "name": "Start on Heroku: Laravel",
+    "description": "This app uses Laravel web application framework with expressive, elegant syntax. ",
+    "keywords": [
+      "productivity",
+      "PHP",
+      "Laravel"
+    ],
+    "website": "https://laravel.com/",
+    "repository": "https://github.com/alopezt16/heroku-laravel-getting-started",
+    "logo": "https://laravel.com/img/logotype.min.svg",
+    "env": {
+      "APP_KEY": {
+        "description": "This key is used by the Illuminate encrypter service and should be set to a random, 32 character string, otherwise, these encrypted strings will not be safe.",
+        "value": "base64:rlegFJgcz/YtDHijwH0Pri1x8WcsWTA0kejiU4o456k="
+      },
+      "APP_ENV": {
+        "description": "This value determines the environment your application is currently running in. This may determine how you prefer to configure various services the application utilizes.",
+        "value": "development"
+      },
+      "APP_DEBUG": {
+        "description": "When your application is in debug mode, detailed error messages with stack traces will be shown on every error that occurs within your application. If disabled, a simple generic error page is shown.",
+        "value": "false"
+      }
+    },
+    "formation": {
+      "web": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
+    "image": "heroku/php",
+    "addons": [
+      {
+        "plan": "heroku-redis",
+        "options": {}
+      },
+      {
+        "plan": "heroku-postgresql",
+        "options": {}
+      }
+    ],
+    "buildpacks": [
+      {
+        "url": "https://github.com/heroku/heroku-buildpack-php"
+      }
+    ]
+  }
